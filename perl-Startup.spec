@@ -6,7 +6,7 @@ Version:	0.103
 Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/authors/id/M/MS/MSCHWARTZ/Startup-%{version}.tar.gz
+Source0:	ftp://ftp.cpan.org/pub/CPAN/authors/id/M/MS/MSCHWARTZ/Startup-%{version}.tar.gz
 Patch0:		Startup-replace.patch
 URL:		http://www.perl.com/CPAN/modules/by-authors/Martin_Schwartz/Startup-%{version}.readme
 BuildRequires:	rpm-perlprov >= 3.0.3-16
