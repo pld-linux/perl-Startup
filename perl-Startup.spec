@@ -4,7 +4,8 @@ Summary(pl):	Modu³ Perla Startup
 Name:		perl-Startup
 Version:	0.103
 Release:	9
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/M/MS/MSCHWARTZ/Startup-%{version}.tar.gz
 # Source0-md5:	8f39b68ee2d5b81caa77d295d6ecacf0
@@ -34,7 +35,8 @@ bêd± lepsze. Wiêcej informacji znajdziesz w Startup(3pm).
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
