@@ -3,7 +3,7 @@ Summary:	Perl Startup module
 Summary(pl):	Modu³ Perla Startup
 Name:		perl-Startup
 Version:	0.103
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/authors/id/M/MS/MSCHWARTZ/Startup-%{version}.tar.gz
