@@ -6,20 +6,6 @@ Version:	0.103
 Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
-Group(cs):	Vıvojové prostøedky/Programovací jazyky/Perl
-Group(da):	Udvikling/Sprog/Perl
-Group(de):	Entwicklung/Sprachen/Perl
-Group(es):	Desarrollo/Lenguajes/Perl
-Group(fr):	Development/Langues/Perl
-Group(is):	Şróunartól/Forritunarmál/Perl
-Group(it):	Sviluppo/Linguaggi/Perl
-Group(ja):	³«È¯/¸À¸ì/Perl
-Group(no):	Utvikling/Programmeringsspråk/Perl
-Group(pl):	Programowanie/Jêzyki/Perl
-Group(pt):	Desenvolvimento/Linguagens/Perl
-Group(ru):	òÁÚÒÁÂÏÔËÁ/ñÚÙËÉ/Perl
-Group(sl):	Razvoj/Jeziki/Perl
-Group(sv):	Utveckling/Språk/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/authors/id/M/MS/MSCHWARTZ/Startup-%{version}.tar.gz
 Patch0:		Startup-replace.patch
 URL:		http://www.perl.com/CPAN/modules/by-authors/Martin_Schwartz/Startup-%{version}.readme
