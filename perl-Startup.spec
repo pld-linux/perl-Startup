@@ -29,7 +29,7 @@ bêd± lepsze. Wiêcej informacji znajdziesz w Startup(3pm).
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 
 %install
 rm -rf $RPM_BUILD_ROOT
