@@ -3,7 +3,7 @@ Summary:	Perl Startup module
 Summary(pl):	Modu³ Perla Startup
 Name:		perl-Startup
 Version:	0.103
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
