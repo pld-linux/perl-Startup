@@ -1,16 +1,17 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary: 	Perl Startup module
 Summary(pl):	Modu³ Perla Startup
 Name: 		perl-Startup
 Version: 	0.103
-Release: 	2
+Release: 	3
 Copyright: 	GPL
 Group: 		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source: 	ftp://ftp.perl.org/pub/CPAN/modules/by-authors/Martin_Schwartz/Startup-%{version}.tar.gz
 Patch:		Startup-replace.patch
 URL:		http://www.perl.com/CPAN/modules/by-authors/Martin_Schwartz/Startup-%{version}.readme
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
