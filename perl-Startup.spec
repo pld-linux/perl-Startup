@@ -27,7 +27,7 @@ bêd± lepsze. Wiêcej informacji znajdziesz w Startup(3pm).
 %patch -p1
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
