@@ -6,9 +6,15 @@ Version:	0.103
 Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
+Group(cs):	Vývojové prostøedky/Programovací jazyky/Perl
 Group(de):	Entwicklung/Sprachen/Perl
+Group(es):	Desarrollo/Lenguajes/Perl
+Group(fr):	Development/Langues/Perl
+Group(ja):	³«È¯/¸À¸ì/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source0:	 ftp://ftp.perl.org/pub/CPAN/authors/id/M/MS/MSCHWARTZ/Startup-%{version}.tar.gz
+Group(pt):	Desenvolvimento/Linguagens/Perl
+Group(ru):	òÁÚÒÁÂÏÔËÁ/ñÚÙËÉ/Perl
+Source0:	ftp://ftp.perl.org/pub/CPAN/authors/id/M/MS/MSCHWARTZ/Startup-%{version}.tar.gz
 Patch0:		Startup-replace.patch
 URL:		http://www.perl.com/CPAN/modules/by-authors/Martin_Schwartz/Startup-%{version}.readme
 BuildRequires:	rpm-perlprov >= 3.0.3-16
