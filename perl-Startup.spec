@@ -3,11 +3,12 @@ Summary: 	Perl Startup module
 Summary(pl):	Modu³ Perla Startup
 Name: 		perl-Startup
 Version: 	0.103
-Release: 	1
+Release: 	2
 Copyright: 	GPL
 Group: 		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source: 	ftp://ftp.perl.org/pub/CPAN/modules/by-authors/Martin_Schwartz/Startup-%{version}.tar.gz
+Patch:		Startup-replace.patch
 URL:		http://www.perl.com/CPAN/modules/by-authors/Martin_Schwartz/Startup-%{version}.readme
 BuildRequires:	perl >= 5.005_03-10
 %requires_eq	perl
@@ -24,13 +25,13 @@ lepsze. Wiêcej informacji znajdziesz w Startup(3pm).
 
 %prep
 %setup -q -n Startup-%{version}
+%patch -p1
 
 %build
 perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
-#install -d $RPM_BUILD_ROOT%{perl_sitearch}
 make install \
 	DESTDIR=$RPM_BUILD_ROOT
 
@@ -49,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc {README,Changes}.gz
-%attr(755,root,root) %{_bindir}/replace
+%attr(755,root,root) %{_bindir}/replace.pl
 
 %{perl_sitelib}/Startup.pm
 %{perl_sitearch}/auto/Startup
