@@ -7,7 +7,7 @@ Release:	10
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/authors/id/M/MS/MSCHWARTZ/Startup-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-authors/id/M/MS/MSCHWARTZ/Startup-%{version}.tar.gz
 # Source0-md5:	8f39b68ee2d5b81caa77d295d6ecacf0
 Patch0:		Startup-replace.patch
 URL:		http://www.perl.com/CPAN/modules/by-authors/Martin_Schwartz/Startup-%{version}.readme
