@@ -12,7 +12,7 @@ Source0:	http://www.cpan.org/authors/id/M/MS/MSCHWARTZ/Startup-%{version}.tar.gz
 Patch0:		Startup-replace.patch
 URL:		http://www.perl.com/CPAN/modules/by-authors/Martin_Schwartz/Startup-%{version}.readme
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 5.6.1
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
