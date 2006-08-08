@@ -26,7 +26,7 @@ bêd± lepsze. Wiêcej informacji znajdziesz w Startup(3pm).
 
 %prep
 %setup -q -n Startup-%{version}
-%patch -p1
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
