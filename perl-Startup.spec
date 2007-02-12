@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Perl Startup module
-Summary(pl):	Modu³ Perla Startup
+Summary(pl.UTF-8):   ModuÅ‚ Perla Startup
 Name:		perl-Startup
 Version:	0.103
 Release:	10
@@ -20,9 +20,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Startup privides some nifty options to make your programs more
 valuable. See Startup(3pm) for details.
 
-%description -l pl
-Startup udostêpnia kilka ciekawych opcji, dziêki którym Twoje programy
-bêd± lepsze. Wiêcej informacji znajdziesz w Startup(3pm).
+%description -l pl.UTF-8
+Startup udostÄ™pnia kilka ciekawych opcji, dziÄ™ki ktÃ³rym Twoje programy
+bÄ™dÄ… lepsze. WiÄ™cej informacji znajdziesz w Startup(3pm).
 
 %prep
 %setup -q -n Startup-%{version}
