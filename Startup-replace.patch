@@ -1,7 +1,7 @@
-diff -urN Startup-0.103/INSTALL Startup-0.103.pld/INSTALL
---- Startup-0.103/INSTALL	Tue Jan 20 00:07:13 1998
-+++ Startup-0.103.pld/INSTALL	Mon Sep 27 16:04:18 1999
-@@ -9,7 +9,7 @@
+diff -urNpa Startup-0.103.orig/INSTALL Startup-0.103/INSTALL
+--- Startup-0.103.orig/INSTALL	1998-01-19 23:07:13.000000000 +0000
++++ Startup-0.103/INSTALL	2018-03-11 15:00:39.113754223 +0000
+@@ -9,7 +9,7 @@ Library directories. Then do the lines:
  This will install the Startup module to your system and also the utility
  and demonstration program:
  
@@ -10,19 +10,10 @@ diff -urN Startup-0.103/INSTALL Startup-0.103.pld/INSTALL
  
  If you need assure where to install executables, library files and manpages, 
  install the distribution with the PREFIX option, like:
-diff -urN Startup-0.103/MANIFEST Startup-0.103.pld/MANIFEST
---- Startup-0.103/MANIFEST	Mon Jan 26 16:57:35 1998
-+++ Startup-0.103.pld/MANIFEST	Mon Sep 27 15:51:31 1999
-@@ -5,4 +5,4 @@
- Makefile.PL
- README
- Startup.pm
--tools/replace
-+tools/replace.pl
-diff -urN Startup-0.103/Makefile.PL Startup-0.103.pld/Makefile.PL
---- Startup-0.103/Makefile.PL	Tue Apr 28 02:40:04 1998
-+++ Startup-0.103.pld/Makefile.PL	Mon Sep 27 15:35:49 1999
-@@ -10,7 +10,7 @@
+diff -urNpa Startup-0.103.orig/Makefile.PL Startup-0.103/Makefile.PL
+--- Startup-0.103.orig/Makefile.PL	1998-04-28 00:40:04.000000000 +0000
++++ Startup-0.103/Makefile.PL	2018-03-11 15:00:19.064754449 +0000
+@@ -10,7 +10,7 @@ WriteMakefile (
        "SUFFIX"   => "gz"
     },
     "EXE_FILES" => [
@@ -31,10 +22,19 @@ diff -urN Startup-0.103/Makefile.PL Startup-0.103.pld/Makefile.PL
     ],
  );
  
-diff -urN Startup-0.103/Startup.pm Startup-0.103.pld/Startup.pm
---- Startup-0.103/Startup.pm	Tue Apr 28 02:38:41 1998
-+++ Startup-0.103.pld/Startup.pm	Mon Sep 27 15:48:51 1999
-@@ -720,8 +720,8 @@
+diff -urNpa Startup-0.103.orig/MANIFEST Startup-0.103/MANIFEST
+--- Startup-0.103.orig/MANIFEST	1998-01-26 15:57:35.000000000 +0000
++++ Startup-0.103/MANIFEST	2018-03-11 15:00:14.943754495 +0000
+@@ -5,4 +5,4 @@ MANIFEST
+ Makefile.PL
+ README
+ Startup.pm
+-tools/replace
++tools/replace.pl
+diff -urNpa Startup-0.103.orig/Startup.pm Startup-0.103/Startup.pm
+--- Startup-0.103.orig/Startup.pm	1998-04-28 00:38:41.000000000 +0000
++++ Startup-0.103/Startup.pm	2018-03-11 15:01:07.713753901 +0000
+@@ -720,8 +720,8 @@ I<ALPHA> version as of C<$Date: 1998/04/
  
  =head1 SYNOPSIS
  
@@ -45,12 +45,12 @@ diff -urN Startup-0.103/Startup.pm Startup-0.103.pld/Startup.pm
  frame for new programs.
  
  =head1 DESCRIPTION
-diff -urN Startup-0.103/tools/replace Startup-0.103.pld/tools/replace
---- Startup-0.103/tools/replace	Mon Jan 26 17:48:19 1998
-+++ Startup-0.103.pld/tools/replace	Thu Jan  1 01:00:00 1970
+diff -urNpa Startup-0.103.orig/tools/replace Startup-0.103/tools/replace
+--- Startup-0.103.orig/tools/replace	1998-01-26 16:48:19.000000000 +0000
++++ Startup-0.103/tools/replace	1970-01-01 00:00:00.000000000 +0000
 @@ -1,232 +0,0 @@
 -#!/usr/bin/perl
--#$Id$
+-#$Id: replace,v 1.9 1998/01/26 16:48:19 schwartz Exp $
 -#
 -# replace - replaces things with thongs
 -#
@@ -63,8 +63,8 @@ diff -urN Startup-0.103/tools/replace Startup-0.103.pld/tools/replace
 -#
 -
 -my $PROGNAME = "replace";
--my $VERSION=do{my@R=('$Revision$'=~/\d+/g);sprintf"%d."."%d"x$#R,@R};
--my $DATE = ('$Date$' =~ / ([^ ]*) /) && $1;
+-my $VERSION=do{my@R=('$Revision: 1.9 $'=~/\d+/g);sprintf"%d."."%d"x$#R,@R};
+-my $DATE = ('$Date: 1998/01/26 16:48:19 $' =~ / ([^ ]*) /) && $1;
 -
 -use Getopt::Long;
 -use Startup;
@@ -281,12 +281,12 @@ diff -urN Startup-0.103/tools/replace Startup-0.103.pld/tools/replace
 -
 -=cut
 -
-diff -urN Startup-0.103/tools/replace.pl Startup-0.103.pld/tools/replace.pl
---- Startup-0.103/tools/replace.pl	Thu Jan  1 01:00:00 1970
-+++ Startup-0.103.pld/tools/replace.pl	Mon Sep 27 16:03:50 1999
+diff -urNpa Startup-0.103.orig/tools/replace.pl Startup-0.103/tools/replace.pl
+--- Startup-0.103.orig/tools/replace.pl	1970-01-01 00:00:00.000000000 +0000
++++ Startup-0.103/tools/replace.pl	2018-03-11 14:59:55.494754714 +0000
 @@ -0,0 +1,232 @@
 +#!/usr/bin/perl
-+#$Id$
++#$Id: replace,v 1.9 1998/01/26 16:48:19 schwartz Exp $
 +#
 +# replace.pl - replaces things with thongs
 +#
@@ -299,8 +299,8 @@ diff -urN Startup-0.103/tools/replace.pl Startup-0.103.pld/tools/replace.pl
 +#
 +
 +my $PROGNAME = "replace.pl";
-+my $VERSION=do{my@R=('$Revision$'=~/\d+/g);sprintf"%d."."%d"x$#R,@R};
-+my $DATE = ('$Date$' =~ / ([^ ]*) /) && $1;
++my $VERSION=do{my@R=('$Revision: 1.9 $'=~/\d+/g);sprintf"%d."."%d"x$#R,@R};
++my $DATE = ('$Date: 1998/01/26 16:48:19 $' =~ / ([^ ]*) /) && $1;
 +
 +use Getopt::Long;
 +use Startup;
