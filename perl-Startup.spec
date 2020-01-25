@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 Summary:	Perl Startup module
 Summary(pl.UTF-8):	Moduł Perla Startup
 Name:		perl-Startup
